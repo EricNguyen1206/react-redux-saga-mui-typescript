@@ -1,5 +1,6 @@
-import { createAction, createSlice, Action, AnyAction } from '@reduxjs/toolkit';
-const login = createAction('login');
+import { createAction, createSlice } from '@reduxjs/toolkit';
+export const login = createAction('login');
+
 const authSlice = createSlice({
     name: 'auth',
     initialState: '',
@@ -17,4 +18,4 @@ export const authAction = authSlice.actions;
 // Selectors
 // Reducers
 // Effects
-export default authSlice;
+export default authSlice.reducer;

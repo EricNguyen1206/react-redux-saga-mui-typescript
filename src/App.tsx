@@ -6,8 +6,9 @@ import SignUp from 'features/auth/pages/Singup';
 function App() {
     return (
         <Routes>
-            <Route path='/' element={<Login />} />
+            {/* <Route path='/' element={<Counter />} /> */}
             <Route path='/signup' element={<SignUp />} />
+            <Route path='/' element={<Login />} />
         </Routes>
     );
 }
