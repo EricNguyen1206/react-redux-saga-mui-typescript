@@ -1,5 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
 
+export interface AppResponse<T> {
+    data: T;
+    status: number;
+}
+
 const axiosClient = axios.create({
     baseURL: 'http://...',
     headers: {
